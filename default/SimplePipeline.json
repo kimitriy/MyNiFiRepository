@@ -2024,7 +2024,7 @@
       "type" : "org.apache.nifi.processors.standard.ExecuteSQL",
       "yieldDuration" : "1 sec"
     }, {
-      "autoTerminatedRelationships" : [ ],
+      "autoTerminatedRelationships" : [ "failure", "unmatched" ],
       "backoffMechanism" : "PENALIZE_FLOWFILE",
       "bulletinLevel" : "WARN",
       "bundle" : {
@@ -2126,6 +2126,6 @@
   "snapshotMetadata" : {
     "author" : "admin",
     "flowIdentifier" : "SimplePipeline",
-    "timestamp" : 1771942577303
+    "timestamp" : 1771943969350
   }
 }
