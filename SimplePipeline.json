@@ -29,7 +29,7 @@
                 "properties": {
                     "Set Auto Commit": "true",
                     "Max Wait Time": "10 seconds",
-                    "SQL Query": "select\n    a.id as auditorium_id,\n    if(a.aud_num = a.description, a.aud_num, concat_ws(' ', a.aud_num, a.description)) as auditorium_name,\n    a.aud_num as auditorium_name_kz,\n    a.aud_num as auditorium_name_en,\n    a.campus_id as campus_id,\n    null as epvo_building_id,\n    a.auditorium_type_id as auditorium_type_id,\n    null as epvo_auditory_id,\n    a.size as capacity,\n    a.area as area\nfrom auditoriums a\nleft join auditorium_type at on a.auditorium_type_id = at.id\nwhere\n    a.deleted = 0\n    and (at.system_type is null or at.system_type != 1)\n;",
+                    "SQL Query": "select\n    a.id as auditorium_id,\n    if(a.aud_num = a.description, a.aud_num, concat_ws(' ', a.aud_num, a.description)) as auditorium_name,\n    a.aud_num as auditorium_name_kz,\n    a.aud_num as auditorium_name_en,\n    a.campus_id as campus_id,\n    CAST(NULL AS SIGNED) as epvo_building_id,\n    a.auditorium_type_id as auditorium_type_id,\n    CAST(NULL AS SIGNED) as epvo_auditory_id,\n    a.size as capacity,\n    a.area as area\nfrom auditoriums a\nleft join auditorium_type at on a.auditorium_type_id = at.id\nwhere\n    a.deleted = 0\n    and (at.system_type is null or at.system_type != 1)\n;",
                     "Database Connection Pooling Service": "9fb8bfdf-9711-31e0-a876-7fa23a3b6a43",
                     "Default Decimal Scale": "0",
                     "SQL Post-Query": null,
