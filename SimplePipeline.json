@@ -1006,7 +1006,7 @@
                     "Destination": "flowfile-attribute",
                     "Return Type": "auto-detect",
                     "Path Not Found Behavior": "warn",
-                    "Null Value Behavior": "empty string",
+                    "Null Value Behavior": "null",
                     "current_max_id": "$.max_id"
                 },
                 "propertyDescriptors": {
