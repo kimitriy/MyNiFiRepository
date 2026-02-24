@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1771923336763,
+    "description" : "",
+    "identifier" : "SimplePipeline",
+    "lastModifiedTimestamp" : 1771923336763,
+    "name" : "SimplePipeline",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
