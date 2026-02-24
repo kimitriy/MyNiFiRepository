@@ -2024,7 +2024,7 @@
       "type" : "org.apache.nifi.processors.standard.ExecuteSQL",
       "yieldDuration" : "1 sec"
     }, {
-      "autoTerminatedRelationships" : [ "failure", "unmatched" ],
+      "autoTerminatedRelationships" : [ ],
       "backoffMechanism" : "PENALIZE_FLOWFILE",
       "bulletinLevel" : "WARN",
       "bundle" : {
@@ -2108,7 +2108,7 @@
       "retriedRelationships" : [ ],
       "retryCount" : 10,
       "runDurationMillis" : 0,
-      "scheduledState" : "DISABLED",
+      "scheduledState" : "ENABLED",
       "schedulingPeriod" : "0 sec",
       "schedulingStrategy" : "TIMER_DRIVEN",
       "style" : { },
@@ -2126,6 +2126,6 @@
   "snapshotMetadata" : {
     "author" : "admin",
     "flowIdentifier" : "SimplePipeline",
-    "timestamp" : 1771923338353
+    "timestamp" : 1771942577303
   }
 }
